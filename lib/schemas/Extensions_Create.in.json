@@ -1,0 +1,39 @@
+{
+    "type": "object",
+    "properties": {
+        "subscriptionId": {
+            "required": true,
+            "type": "string"
+        },
+        "resourceGroupName": {
+            "required": true,
+            "type": "string"
+        },
+        "clusterName": {
+            "required": true,
+            "type": "string"
+        },
+        "extensionName": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "Cluster monitoring extensions",
+            "properties": {
+                "primaryKey": {
+                    "description": "The certificate for the cluster monitoring extensions.",
+                    "type": "string"
+                },
+                "workspaceId": {
+                    "description": "The workspace ID for the cluster monitoring extension.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,35 @@
+{
+    "type": "object",
+    "properties": {
+        "subscriptionId": {
+            "required": true,
+            "type": "string"
+        },
+        "resourceGroupName": {
+            "required": true,
+            "type": "string"
+        },
+        "clusterName": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "The Operations Management Suite (OMS) parameters.",
+            "properties": {
+                "primaryKey": {
+                    "description": "The Operations Management Suite (OMS) workspace key.",
+                    "type": "string"
+                },
+                "workspaceId": {
+                    "description": "The Operations Management Suite (OMS) workspace ID.",
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "api_version": {
+            "required": true,
+            "type": "string"
+        }
+    }
+}
